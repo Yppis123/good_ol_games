@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Scanner;
+
 public class Review {
 
     private float scoreGameplay;
@@ -25,3 +27,4 @@ public class Review {
         return gemiddeldeScore;
     }
 }
+

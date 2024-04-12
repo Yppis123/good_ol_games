@@ -1,5 +1,7 @@
 package menu;
 
+import model.Ranglijst;
+
 import java.util.Scanner;
 
 public abstract class MenuKeuze {
@@ -22,9 +24,5 @@ public abstract class MenuKeuze {
         System.out.println(keuzeNummer + ". " + keuzeOmschrijving);
     }
 
-    public void voerActieUit() {
-
-    }
-
-
+    public abstract void voerActieUit();
 }

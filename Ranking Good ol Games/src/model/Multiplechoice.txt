@@ -1,0 +1,3 @@
+Welke retro game vind u het leukst?, (1) Pacman. (2) Spaceinvader. (3) Tetris. (4) Street fighter.,
+Zou u uw favorite game aanraden aan uw vrienden?, (1) Ja. (2) Nee.,2
+Test?, 1 s. 2 af. 3 asf. 4 saf. 5 sdhnnu.,3

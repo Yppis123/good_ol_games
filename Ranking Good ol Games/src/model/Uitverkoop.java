@@ -1,19 +1,22 @@
 package model;
 
 import model.Game;
+import utils.DataSeeder;
 
 import java.util.ArrayList;
 
 
 public class Uitverkoop {
-    ArrayList<Game> uitverkooplijst = new ArrayList<Game>();
+    public void toonUitverkooplijst() {
+        ArrayList<Game> uitverkooplijst = DataSeeder.getInstance().getUitverkoopLijst();
+        float vorigePercentage = 0;
+            for (Game game : uitverkooplijst) {
+                System.out.println("Naam: " + game.getNaam());
+                System.out.printf("Prijs: €%.2f%n", game.getPrijs());
+                System.out.println("Korting: " + game.getKortingsPercentage() + "%");
+                System.out.println("Gemiddelde game score: " + game.getGemGameScore());
+                System.out.println();
+            }
 
-    public void toonUitverkoop() {
-        for (int i = 0; i < uitverkooplijst.size(); i++) {
-            System.out.println("Naam: " + uitverkooplijst.get(i).getNaam());
-            System.out.println("Prijs: " + uitverkooplijst.get(i).getPrijs());
-            System.out.println("Gemiddelde game score: " + uitverkooplijst.get(i).getGemGameScore());
-            System.out.println();
-        }
     }
 }

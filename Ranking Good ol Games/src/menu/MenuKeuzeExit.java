@@ -6,7 +6,7 @@ public class MenuKeuzeExit extends MenuKeuze{
         super(keuzeNummer, keuzeOmschrijving);
     }
 
-
+    @Override
     public void voerActieUit(){
         System.out.println("Het systeem is succesvol afgesloten!");
         System.exit(0);
